@@ -16,7 +16,7 @@ In the meantime, below is an example of what you can do with just a few lines of
 """
 
 with st.echo(code_location='below'):
-    total_points = st.slider("Number of points in spiral", 1, 4000, 1000)
+    total_points = st.slider("Number of points in spiral", 1, 3000, 1000)
     num_turns = st.slider("Number of turns in spiral", 1, 100, 9)
 
     Point = namedtuple('Point', 'x y')
