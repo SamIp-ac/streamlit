@@ -1,4 +1,4 @@
-# Contents of ~/my_app/main_page.py
+# Contents of ~/my_app/main.py
 import streamlit as st
 
 st.markdown("# Main page 🎈")
