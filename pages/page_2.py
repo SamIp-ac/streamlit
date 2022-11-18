@@ -1,7 +1,7 @@
 import streamlit as st
 
-st.markdown("# Page 2 ❄️")
-st.sidebar.markdown("# Page 2 ❄️")
+st.markdown("# Page 1 ❄️")
+st.sidebar.markdown("# Page 1 ❄️")
 
 st.set_option("deprecation.showfileUploaderEncoding", False)
 
