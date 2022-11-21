@@ -7,4 +7,3 @@ librosa
 yellowbrick
 numpy
 scipy
-libsndfile1-dev
