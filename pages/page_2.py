@@ -1,7 +1,7 @@
 import streamlit as st
 
-st.markdown("# Page 1 ❄️")
-st.sidebar.markdown("# Page 1 ❄️")
+st.markdown("# Play Audio")
+st.sidebar.markdown("# Play Audio️")
 
 st.set_option("deprecation.showfileUploaderEncoding", False)
 
