@@ -1,3 +1,9 @@
 altair
 pandas
 streamlit
+matplotlib
+sklearn
+librosa
+yellowbrick
+numpy
+scipy
