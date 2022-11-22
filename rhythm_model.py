@@ -574,8 +574,8 @@ class Count_clusters:
 
 def classifier_(wav):
     audio = Audio()
-    y, sr = audio.read_audio('piano_D.wav', type_='librosa')
-    X_train_audio, X_train_spectrogram, sr = audio.spectrogram_librosa(y, win_length=1024, n_fft=1024, sampling_rate=sr)
+    # y, sr = audio.read_audio('piano_D.wav', type_='librosa')
+    X_train_audio, X_train_spectrogram, sr = audio.spectrogram_librosa(wav, win_length=1024, n_fft=1024, sampling_rate=44100)
 
     for k in range(0, len(X_train_spectrogram)):
         XX_train = audio.rhythm_extract(X_train_spectrogram[k], critical_value=1.5, pitch=13)

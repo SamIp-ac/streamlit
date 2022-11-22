@@ -15,6 +15,5 @@ RUN apt-get update && apt-get install -y \
 RUN git clone https://github.com/SamIp-ac/streamlit.git .
 
 RUN pip3 install -r requirements.txt
-RUN xargs -a packages.txt apt-get install --yes
 
 ENTRYPOINT ["streamlit", "run", "./main.py", "--server.port=8501", "--server.address=0.0.0.0"]
