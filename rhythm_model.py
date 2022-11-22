@@ -14,6 +14,7 @@ from sklearn.metrics import davies_bouldin_score
 from scipy.io.wavfile import write
 import os
 
+
 class Audio:  # REMARK: for violin only
     def __init__(self):
         self.stage = 2

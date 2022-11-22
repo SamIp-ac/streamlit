@@ -1,5 +1,6 @@
 import streamlit as st
 import rhythm_model as rm
+
 st.markdown("# Play Audio")
 st.sidebar.markdown("# Make prediction")
 st.set_option("deprecation.showfileUploaderEncoding", False)
