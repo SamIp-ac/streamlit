@@ -11,7 +11,7 @@ import librosa.display
 from sklearn.cluster import DBSCAN
 from yellowbrick.cluster import KElbowVisualizer
 from sklearn.metrics import davies_bouldin_score
-
+from scipy.io.wavfile import write
 
 class Audio:  # REMARK: for violin only
     def __init__(self):
@@ -572,14 +572,17 @@ class Count_clusters:
         return self.result, clusters_all
 
 
-def classifier_(wav):
+def classifier_(wav, sr=44100):
     audio = Audio()
-    # y, sr = audio.read_audio('piano_D.wav', type_='librosa')
-    X_train_audio, X_train_spectrogram, sr = audio.spectrogram_librosa(wav, win_length=1024, n_fft=1024, sampling_rate=44100)
+    wav = np.frombuffer(wav, dtype=np.int16)
+    write('temp.wav', sr, wav)
+    y, sr = audio.read_audio('temp.wav', type_='librosa')
+    X_train_audio, X_train_spectrogram, sr = audio.spectrogram_librosa(y, win_length=1024, n_fft=1024, sampling_rate=sr)
 
     for k in range(0, len(X_train_spectrogram)):
         XX_train = audio.rhythm_extract(X_train_spectrogram[k], critical_value=1.5, pitch=13)
 
     XX_train_1D = audio.converter(XX_train)
     cc = Count_clusters(XX_train_1D)
+
     return cc.bagging_()[0]
