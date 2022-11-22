@@ -12,6 +12,7 @@ from sklearn.cluster import DBSCAN
 from yellowbrick.cluster import KElbowVisualizer
 from sklearn.metrics import davies_bouldin_score
 from scipy.io.wavfile import write
+import os
 
 class Audio:  # REMARK: for violin only
     def __init__(self):
@@ -585,4 +586,5 @@ def classifier_(wav, sr=44100):
     XX_train_1D = audio.converter(XX_train)
     cc = Count_clusters(XX_train_1D)
 
+    os.remove('temp.wav')
     return cc.bagging_()[0]
