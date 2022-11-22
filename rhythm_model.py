@@ -580,7 +580,7 @@ def classifier_(wav, sr=44100):
     X_train_audio, X_train_spectrogram, sr = audio.spectrogram_librosa(y, win_length=1024, n_fft=1024, sampling_rate=sr)
 
     for k in range(0, len(X_train_spectrogram)):
-        XX_train = audio.rhythm_extract(X_train_spectrogram[k], critical_value=1.5, pitch=13)
+        XX_train = audio.rhythm_extract(X_train_spectrogram[k], critical_value=4, pitch=5)
 
     XX_train_1D = audio.converter(XX_train)
     cc = Count_clusters(XX_train_1D)
