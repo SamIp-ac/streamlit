@@ -26,13 +26,13 @@ if st.button("Convert to unicode"):
     st.text(ans)
 
     st.download_button(
-        label="Download data as CSV",
+        label="Download data as txt",
         data=ans,
         file_name='unicode.txt'
     )
 
     copy_button = Button(label="Copy text")
-    copy_button.js_on_event("button_click", CustomJS(args=dict(df=ans), code="""
+    copy_button.js_on_event("button_click", CustomJS(args=ans, code="""
         navigator.clipboard.writeText(ans);
         """))
 
