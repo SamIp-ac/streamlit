@@ -32,8 +32,8 @@ if st.button("Convert to unicode"):
     )
 
     copy_button = Button(label="Copy text")
-    copy_button.js_on_event("button_click", CustomJS(args=ans, code="""
-        navigator.clipboard.writeText(ans);
+    copy_button.js_on_event("button_click", CustomJS(args=dict(df=ans), code="""
+        navigator.clipboard.writeText(df);
         """))
 
     no_event = streamlit_bokeh_events(
@@ -41,5 +41,5 @@ if st.button("Convert to unicode"):
         events="GET_TEXT",
         key="get_text",
         refresh_on_update=True,
-        override_height=75,
+        override_height=25,
         debounce_time=0)

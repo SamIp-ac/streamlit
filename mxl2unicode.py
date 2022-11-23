@@ -124,7 +124,7 @@ def mxl2uni(file):
     dict_meta = dict()
     dict_meta['key'] = meta_key
 
-    TimeSignature = c.recurse().getTimeSignatures()[0]
+    TimeSignature = c.recurse().stream().getTimeSignatures()[0]
     meta_TimeSignature = str(TimeSignature)
     dict_meta['TimeSignature'] = meta_TimeSignature.split(' ')[-1][:-1][0] + meta_TimeSignature.split(' ')[-1][:-1][-1]
 
