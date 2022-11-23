@@ -9,7 +9,7 @@ st.set_option("deprecation.showfileUploaderEncoding", False)
 st.title("Rhythm detection")
 
 # displays a file uploader widget
-audio_file = st.file_uploader("Upload a audio (.wav)")
+audio_file = st.file_uploader("Upload a audio (.wav)", type='wav')
 
 if st.button("play audio"):
     audio_bytes = audio_file.read()
