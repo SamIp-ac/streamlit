@@ -17,5 +17,5 @@ if audio_file:
         st.audio(audio_bytes)
     if st.button("Predict rhythm"):
         ans = rm.classifier_(audio_file)
-        st.text('The separation of rhythm is ', ans)
+        st.text('The separation of rhythm is : ' + str(ans))
 
