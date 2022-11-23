@@ -576,9 +576,9 @@ class Count_clusters:
 
 def classifier_(wav, sr=44100):
     audio = Audio()
-    wav = np.frombuffer(wav, dtype=np.int16)
-    write('temp.wav', sr, wav)
-    y, sr = audio.read_audio('temp.wav', type_='librosa')
+    '''wav = np.frombuffer(wav, dtype=np.int16)
+    write('temp.wav', sr, wav)'''
+    y, sr = audio.read_audio(wav, type_='librosa')
     X_train_audio, X_train_spectrogram, sr = audio.spectrogram_librosa(y, win_length=1024, n_fft=1024, sampling_rate=sr)
 
     for k in range(0, len(X_train_spectrogram)):
@@ -587,5 +587,5 @@ def classifier_(wav, sr=44100):
     XX_train_1D = audio.converter(XX_train)
     cc = Count_clusters(XX_train_1D)
 
-    os.remove('temp.wav')
+    '''os.remove('temp.wav')'''
     return cc.bagging_()[0]
