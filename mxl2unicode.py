@@ -2,9 +2,12 @@ import music21
 import pandas as pd
 
 
-def mxl2uni(filename):
+def mxl2uni(file):
 
-    c = music21.converter.parse(filename)  # Input the song/piece here.
+    with open('temp_mxl.mxl', "wb") as f:
+        f.write(file.getbuffer())
+
+    c = music21.converter.parse('temp_mxl.mxl')  # Input the song/piece here.
 
     '''for i in c.getTimeSignatures():
         print(i)

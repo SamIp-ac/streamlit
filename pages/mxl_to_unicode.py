@@ -24,9 +24,16 @@ if st.button("Convert to unicode"):
 
     ans = mu.mxl2uni(audio_file)
     st.text(ans)
-    copy_button = Button(label="Copy DF")
+
+    st.download_button(
+        label="Download data as CSV",
+        data=ans,
+        file_name='unicode.txt'
+    )
+
+    copy_button = Button(label="Copy text")
     copy_button.js_on_event("button_click", CustomJS(args=dict(df=ans), code="""
-        navigator.clipboard.writeText(df);
+        navigator.clipboard.writeText(ans);
         """))
 
     no_event = streamlit_bokeh_events(
