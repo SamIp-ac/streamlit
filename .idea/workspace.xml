@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="34d9d164-449b-47a3-a59b-c88bea3749d4" name="Changes" comment="add and change name">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/Rhythm_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Rhythm_detection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/mxl_to_unicode.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/mxl_to_unicode.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,13 +86,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667883844271</updated>
-    </task>
-    <task id="LOCAL-00003" summary="change a word">
-      <created>1668578389960</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1668578389960</updated>
     </task>
     <task id="LOCAL-00004" summary="change a word">
       <created>1668578848255</created>
@@ -430,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669185774335</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="add and change name">
+      <created>1669185857409</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1669185857409</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

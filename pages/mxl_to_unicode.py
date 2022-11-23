@@ -4,18 +4,8 @@ from bokeh.models.widgets import Button
 from bokeh.models import CustomJS
 from streamlit_bokeh_events import streamlit_bokeh_events
 
-st.markdown("# Display text")
-st.sidebar.markdown("# Display text")
-
-st.text('Fixed width text')
-st.markdown('_Markdown_') # see *
-st.latex(r''' e^{i\pi} + 1 = 0 ''')
-st.write('Most objects') # df, err, func, keras!
-st.write(['st', 'is <', 3]) # see *
-st.title('My title')
-st.header('My header')
-st.subheader('My sub')
-st.code('for i in range(8): foo()')
+st.markdown("# Unicode generator")
+st.sidebar.markdown("# Unicode generator")
 
 # displays a file uploader widget
 mxl_file = st.file_uploader("Upload a mxl file")
@@ -43,3 +33,13 @@ if mxl_file:
             override_height=25,
             debounce_time=0)
 
+
+st.text('Fixed width text')
+st.markdown('_Markdown_') # see *
+st.latex(r''' e^{i\pi} + 1 = 0 ''')
+st.write('Most objects') # df, err, func, keras!
+st.write(['st', 'is <', 3]) # see *
+st.title('My title')
+st.header('My header')
+st.subheader('My sub')
+st.code('for i in range(8): foo()')

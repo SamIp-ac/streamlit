@@ -32,13 +32,7 @@ class mxl2wav:
         fs = FluidSynth('font.sf2', sample_rate=44100)  # must need .sf2 file
         fs.midi_to_audio(input_filename, output_filename + '.wav')
 
-    def tempo_converter(self, filename, tempo_):  # It works
-        """Change your tempo, save as the same name"""
-        mid = MidiFile(filename)
-
-        mid.tracks[0][0] = mido.MetaMessage('set_tempo', tempo=int((60.0 / tempo_) * 1000000), time=0)
-        mid.save(filename)
-
 
 def m2w(mxlfile):
     mw = mxl2wav()
+

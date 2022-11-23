@@ -1,8 +1,24 @@
 import streamlit as st
 import pandas as pd
-
+import mxl2wav as mw
 st.markdown("# Add widgets to sidebar")
 st.sidebar.markdown("# Add widgets to sidebar")
+
+
+mxlfile = st.file_uploader("Upload a mxl file")
+if mxlfile:
+    ans = mw.m2w(mxlfile)
+    st.download_button(
+        label="Download data as txt",
+        data=ans,
+        file_name='audio.wav'
+    )
+'''# Just add it after st.sidebar:
+a = st.sidebar.radio('Select one:', [1, 2])
+
+# Or use "with" notation
+with st.sidebar:
+    st.radio('Select one:', [1, 2])'''
 
 # Store the initial value of widgets in session state
 if "visibility" not in st.session_state:
@@ -25,10 +41,3 @@ with col2:
         disabled=st.session_state.disabled,
         horizontal=st.session_state.horizontal,
     )
-
-'''# Just add it after st.sidebar:
-a = st.sidebar.radio('Select one:', [1, 2])
-
-# Or use "with" notation
-with st.sidebar:
-    st.radio('Select one:', [1, 2])'''
