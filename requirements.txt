@@ -10,3 +10,4 @@ scipy==1.9.3
 music21==8.1.0
 bokeh==3.0.2
 streamlit_bokeh_events==0.1.2
+midi2audio==0.1.1

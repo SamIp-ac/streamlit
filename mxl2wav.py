@@ -1,15 +1,6 @@
 import music21
 from music21 import *
 from midi2audio import FluidSynth
-from IPython.display import Image, Audio
-import mido
-import IPython
-import pandas as pd
-from mido import MidiFile, MidiFile, MidiTrack
-import librosa
-import librosa.display
-import numpy as np
-import IPython.display as ipd
 
 
 class mxl2wav:
@@ -17,13 +8,16 @@ class mxl2wav:
     def __init__(self):
         self.stage = 'end'
 
-    def mxl2midi(self, filename, output_filename, switch=False):
+    def mxl2midi(self, filename, output_filename, instrument, switch=True):
         """Input: file need to convert, output name (no need .mid)"""
         c = music21.converter.parse(filename)
         if switch:
             for el in c.recurse():
                 if 'Instrument' in el.classes:
-                    el.activeSite.replace(el, instrument.Violin())
+                    if instrument == 'violin':
+                        el.activeSite.replace(el, instrument.Violin())
+                    elif instrument == 'piano':
+                        el.activeSite.replace(el, instrument.Piano())
 
         fp = c.write('midi', output_filename + '.mid')
 
@@ -33,6 +27,8 @@ class mxl2wav:
         fs.midi_to_audio(input_filename, output_filename + '.wav')
 
 
-def m2w(mxlfile):
+def m2w(mxlfile, instrument):
     mw = mxl2wav()
+    mw.mxl2midi(mxlfile, 'temp_midi', instrument)
+    mw.midi2wav('temp_midi' + 'mid', 'temp')
 

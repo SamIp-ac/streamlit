@@ -6,10 +6,15 @@ st.sidebar.markdown("# Add widgets to sidebar")
 
 
 mxlfile = st.file_uploader("Upload a mxl file")
+instrument = st.selectbox(
+    'How would you like to convert to ?',
+    ('piano', 'violin'))
+
+st.write('You selected:', instrument)
 if mxlfile:
-    ans = mw.m2w(mxlfile)
+    ans = mw.m2w(mxlfile, str(instrument))
     st.download_button(
-        label="Download data as txt",
+        label="Download data",
         data=ans,
         file_name='audio.wav'
     )
