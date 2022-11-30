@@ -10,7 +10,7 @@ st.sidebar.markdown("# mxl to wav convertor")
 
 mxlfile = st.file_uploader("Upload a mxl file")
 instrument = st.selectbox(
-    'How would you like to convert to ?',
+    'which instrument would you like to convert to ?',
     ('piano', 'violin', 'flute', 'clarinet'))
 
 st.write('You selected:', instrument)
