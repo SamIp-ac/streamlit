@@ -1,6 +1,9 @@
 import streamlit as st
 import pandas as pd
 import mxl2wav as mw
+import os
+from scipy.io import wavfile
+
 st.markdown("# Add widgets to sidebar")
 st.sidebar.markdown("# Add widgets to sidebar")
 
@@ -8,16 +11,28 @@ st.sidebar.markdown("# Add widgets to sidebar")
 mxlfile = st.file_uploader("Upload a mxl file")
 instrument = st.selectbox(
     'How would you like to convert to ?',
-    ('piano', 'violin'))
+    ('piano', 'violin', 'flute', 'clarinet'))
 
 st.write('You selected:', instrument)
+
 if mxlfile:
-    ans = mw.m2w(mxlfile, str(instrument))
-    st.download_button(
-        label="Download data",
-        data=ans,
-        file_name='audio.wav'
-    )
+    if st.button("Convert to wav"):
+
+        ans = mw.m2w(mxlfile, str(instrument))
+        ans = mw.m2w(mxlfile, str(instrument))
+        # sr, x = wavfile.read('pages/Data/temp.wav')
+        audio_file = open('pages/Data/temp.wav', 'rb')
+        audio_bytes = audio_file.read()
+
+        st.download_button(
+            label="Download data",
+            data=audio_bytes,
+            file_name='audio.wav'
+        )
+        os.remove('temp_midi.mid')
+        os.remove('temp_mxl.mxl')
+        os.remove('pages/Data/temp.wav')
+
 '''# Just add it after st.sidebar:
 a = st.sidebar.radio('Select one:', [1, 2])
 

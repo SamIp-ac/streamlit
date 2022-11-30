@@ -12,6 +12,7 @@ st.title("Rhythm detection")
 audio_file = st.file_uploader("Upload a audio (.wav)", type='wav')
 
 if audio_file:
+    st.text('The type is ' + str(type(audio_file)))
     if st.button("play audio"):
         audio_bytes = audio_file.read()
         st.audio(audio_bytes)

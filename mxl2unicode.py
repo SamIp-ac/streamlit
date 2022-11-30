@@ -219,7 +219,6 @@ def mxl2uni(file):
     Unicode = []
     clef = 'G clef'
     '''print(df.head())'''
-    temp_symbol_dict['5-line staff']
 
     beam_checking_list = ['note 8th', 'note 16th']
     note_check_list = ['A5', 'B5', 'C6', 'D6', 'E6',
