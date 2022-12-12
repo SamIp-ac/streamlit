@@ -68,4 +68,5 @@ def inst_classifier(filename):
 
     plt.savefig('pages/Data/temp.png')
     top_ = [class_names[top_class_indices[x]] for x in range(0, 5, 1)]
+
     return top_
