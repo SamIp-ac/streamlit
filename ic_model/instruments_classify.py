@@ -14,7 +14,6 @@ def inst_classifier(filename):
     # Read in the audio.
     wav_file_name = filename
     wav_data_raw, sr = sf.read(wav_file_name, dtype=np.int16, always_2d=False)
-    print(wav_data_raw.shape)
 
     try:
         if wav_data_raw.shape[1] == 1:
@@ -31,7 +30,6 @@ def inst_classifier(filename):
     # The graph is designed for a sampling rate of 16 kHz, but higher rates should work too.
     # We also generate scores at a 10 Hz frame rate.
     params = yamnet_params.Params(sample_rate=sr, patch_hop_seconds=0.1)
-    print("Sample rate =", params.sample_rate)
 
     # Set up the YAMNet model.
     class_names = yamnet_model.class_names('ic_model/yamnet_class_map.csv')
