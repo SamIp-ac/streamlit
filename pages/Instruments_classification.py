@@ -20,6 +20,6 @@ if wavfile_:
         st.download_button(
             label="Download data",
             data=image,
-            file_name='audio.wav'
+            file_name='image.png'
         )
         os.remove('pages/Data/temp.png')

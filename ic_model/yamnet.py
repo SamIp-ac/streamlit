@@ -21,7 +21,7 @@ import numpy as np
 import tensorflow as tf
 from keras import Model, layers
 
-import features as features_lib
+from ic_model import features as features_lib
 
 
 def _batch_norm(name, params):

@@ -1,10 +1,12 @@
+import os
+
 import numpy as np
 import soundfile as sf
 
 import matplotlib.pyplot as plt
 
-import params as yamnet_params
-import yamnet as yamnet_model
+from ic_model import params as yamnet_params
+from ic_model import yamnet as yamnet_model
 import tensorflow as tf
 
 
@@ -13,10 +15,14 @@ def inst_classifier(filename):
     wav_file_name = filename
     wav_data_raw, sr = sf.read(wav_file_name, dtype=np.int16, always_2d=False)
     print(wav_data_raw.shape)
-    if wav_data_raw.shape[1] == 1:
+
+    try:
+        if wav_data_raw.shape[1] == 1:
+            wav_data = wav_data_raw
+        elif wav_data_raw.shape[1] == 2:
+            wav_data = (wav_data_raw[:, 0] + wav_data_raw[:, 1]) / 2
+    except:
         wav_data = wav_data_raw
-    elif wav_data_raw.shape[1] == 2:
-        wav_data = (wav_data_raw[:, 0] + wav_data_raw[:, 1]) / 2
 
     # print(max(wav_data))
     waveform = wav_data / 32768.0
@@ -28,9 +34,9 @@ def inst_classifier(filename):
     print("Sample rate =", params.sample_rate)
 
     # Set up the YAMNet model.
-    class_names = yamnet_model.class_names('yamnet_class_map.csv')
+    class_names = yamnet_model.class_names('ic_model/yamnet_class_map.csv')
     yamnet = yamnet_model.yamnet_frames_model(params)
-    yamnet.load_weights('yamnet.h5')
+    yamnet.load_weights('ic_model/yamnet.h5')
 
     # Run the model.
     scores, embeddings, spectrogram = yamnet(waveform)
