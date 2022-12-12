@@ -12,5 +12,5 @@ bokeh==3.0.2
 streamlit_bokeh_events==0.1.2
 midi2audio==0.1.1
 fluidsynth==0.2
-tensorflow-macos==2.10.0
-keras==2.10.0
+tensorflow-macos==2.11.0
+keras==2.11.0

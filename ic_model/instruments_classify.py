@@ -62,4 +62,4 @@ def inst_classifier(filename):
     plt.yticks(yticks, [class_names[top_class_indices[x]] for x in yticks])
     _ = plt.ylim(-0.5 + np.array([top_N, 0]))
 
-    plt.savefig('temp.png')
+    plt.savefig('pages/Data/temp.png')
