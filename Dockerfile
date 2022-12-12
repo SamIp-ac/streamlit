@@ -1,14 +1,19 @@
-FROM python:3.9.6-stretch
+FROM python:3.9.6
 
 # Maintainer info
 LABEL maintainer="i60996395@gmail.com"
 
+EXPOSE 8080
 # Make working directories
-RUN  mkdir -p  /AirMusicStramlit_demo
-WORKDIR  /AirMusicStramlit_demo
+RUN  mkdir -p  /airmusicstramlit_demo
+WORKDIR  /airmusicstramlit_demo
 
 # Upgrade pip with no cache
-RUN pip install --no-cache-dir -U pip
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    software-properties-common \
+    git \
+    && rm -rf /var/lib/apt/lists/*
 
 # Copy application requirements file to the created working directory
 COPY requirements.txt .
@@ -21,3 +26,4 @@ COPY  . .
 
 # Run the python application
 CMD ["python", "main.py"]
+ENTRYPOINT ["streamlit", "run", "./main.py", "--server.port=8080", "--server.address=0.0.0.0"]
