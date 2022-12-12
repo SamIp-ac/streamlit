@@ -1,19 +1,23 @@
-# app/Dockerfile
+FROM python:3.7.3-stretch
 
-FROM python:3.9-slim
+# Maintainer info
+LABEL maintainer="i60996395@gmail.com"
 
-EXPOSE 8501
+# Make working directories
+RUN  mkdir -p  /AirMusicStramlit_demo
+WORKDIR  /AirMusicStramlit_demo
 
-WORKDIR /streamlit
+# Upgrade pip with no cache
+RUN pip install --no-cache-dir -U pip
 
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    software-properties-common \
-    git \
-    && rm -rf /var/lib/apt/lists/*
+# Copy application requirements file to the created working directory
+COPY requirements.txt .
 
-RUN git clone https://github.com/SamIp-ac/streamlit.git .
+# Install application dependencies from the requirements file
+RUN pip install -r requirements.txt
 
-RUN pip3 install -r requirements.txt
+# Copy every file in the source folder to the created working directory
+COPY  . .
 
-ENTRYPOINT ["streamlit", "run", "./main.py", "--server.port=8501", "--server.address=0.0.0.0"]
+# Run the python application
+CMD ["python", "main.py"]
