@@ -11,27 +11,32 @@ st.sidebar.markdown("# mxl to wav convertor")
 mxlfile = st.file_uploader("Upload a mxl file")
 instrument = st.selectbox(
     'which instrument would you like to convert to ?',
-    ('piano', 'violin', 'flute', 'clarinet'))
+    ('---', 'piano', 'violin', 'flute', 'clarinet'))
 
-st.write('You selected:', instrument)
+if instrument == '---':
+    st.text('Please select one instrument')
 
-if mxlfile:
+
+if instrument != '---':
+    st.write('You selected:', instrument)
+
     if st.button("Convert to wav"):
+        ans = mw.m2w(mxlfile, str(instrument))
 
-        ans = mw.m2w(mxlfile, str(instrument))
-        ans = mw.m2w(mxlfile, str(instrument))
         # sr, x = wavfile.read('pages/Data/temp.wav')
         audio_file = open('pages/Data/temp.wav', 'rb')
         audio_bytes = audio_file.read()
+        st.audio('pages/Data/temp.wav')
+
+        os.remove('temp_midi.mid')
+        os.remove('temp_mxl.mxl')
+        os.remove('pages/Data/temp.wav')
 
         st.download_button(
             label="Download data",
             data=audio_bytes,
             file_name='audio.wav'
         )
-        os.remove('temp_midi.mid')
-        os.remove('temp_mxl.mxl')
-        os.remove('pages/Data/temp.wav')
 
 '''# Just add it after st.sidebar:
 a = st.sidebar.radio('Select one:', [1, 2])

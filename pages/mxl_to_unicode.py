@@ -14,6 +14,8 @@ if mxl_file:
         ans = mu.mxl2uni(mxl_file)
         st.text(ans)
 
+        # print(ans.encode('utf-8').decode('utf-8'))
+
         st.download_button(
             label="Download data as txt",
             data=ans,

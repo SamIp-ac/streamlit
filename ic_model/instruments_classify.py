@@ -10,10 +10,11 @@ from ic_model import yamnet as yamnet_model
 import tensorflow as tf
 
 
-def inst_classifier(filename):
+def inst_classifier(filename, cutting_start, cutting_end):
     # Read in the audio.
     wav_file_name = filename
     wav_data_raw, sr = sf.read(wav_file_name, dtype=np.int16, always_2d=False)
+    wav_data_raw = wav_data_raw[cutting_start:cutting_end]
 
     try:
         if wav_data_raw.shape[1] == 1:
