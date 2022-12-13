@@ -14,7 +14,7 @@ if mxl_file:
     if st.button("Convert to unicode"):
         ans = mu.mxl2uni(mxl_file)
         st.text(ans)
-        os.remove('temp.wav')
+        os.remove('temp_mxl.mxl')
         # print(ans.encode('utf-8').decode('utf-8'))
 
         st.download_button(
