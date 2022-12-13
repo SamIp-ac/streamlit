@@ -13,6 +13,9 @@ if wavfile_:
     if st.button("Predict"):
 
         ans = ic.inst_classifier(filename=wavfile_)
+
+        st.text('The top 5 predict is : \n')
+        st.text(str([x for x in ans]))
         image = Image.open('pages/Data/temp.png')
 
         st.image(image, caption='Prediction result')
@@ -22,6 +25,4 @@ if wavfile_:
             data=open('pages/Data/temp.png', 'rb').read(),
             file_name='pages/Data/temp.png'
         )
-        st.text('The top 5 predict is : \n')
-        st.text(str([x for x in ans]))
         os.remove('pages/Data/temp.png')
