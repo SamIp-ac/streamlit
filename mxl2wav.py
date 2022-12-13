@@ -38,6 +38,6 @@ class mxl2wav:
 def m2w(mxlfile, instruments):
     mw = mxl2wav()
     mw.mxl2midi(mxlfile, 'temp_midi', instruments)
-    mw.midi2wav('temp_midi' + '.mid', 'pages/Data/temp')
+    mw.midi2wav('temp_midi' + '.mid', 'pages/Data/temp_mxl2wav')
 
 

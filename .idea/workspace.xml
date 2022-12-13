@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34d9d164-449b-47a3-a59b-c88bea3749d4" name="Changes" comment="add and change name">
+      <change afterPath="$PROJECT_DIR$/auto_speech_v1_3_1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ic_model/instruments_classify.py" beforeDir="false" afterPath="$PROJECT_DIR$/ic_model/instruments_classify.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/Instruments_classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Instruments_classification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/mxl_to_unicode.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/mxl_to_unicode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mxl2wav.py" beforeDir="false" afterPath="$PROJECT_DIR$/mxl2wav.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Auto_speech.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Auto_speech.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/mxl_to_wav.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/mxl_to_wav.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/st_Display_text_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/st_Display_text_method.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <list id="094754ac-525d-428b-a3ed-dbecebdeb3a3" name="ignore" comment="">
       <change afterPath="$PROJECT_DIR$/font.sf2" afterDir="false" />
@@ -96,34 +98,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667883844271</updated>
-    </task>
-    <task id="LOCAL-00036" summary="add and change name">
-      <created>1669008067627</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1669008067627</updated>
-    </task>
-    <task id="LOCAL-00037" summary="add and change name">
-      <created>1669013661610</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1669013661610</updated>
-    </task>
-    <task id="LOCAL-00038" summary="add and change name">
-      <created>1669014761350</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1669014761350</updated>
-    </task>
-    <task id="LOCAL-00039" summary="add and change name">
-      <created>1669015360625</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1669015360625</updated>
     </task>
     <task id="LOCAL-00040" summary="add and change name">
       <created>1669016748847</created>
@@ -440,7 +414,35 @@
       <option name="project" value="LOCAL" />
       <updated>1670898217941</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="add and change name">
+      <created>1670910808896</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1670910808896</updated>
+    </task>
+    <task id="LOCAL-00086" summary="add and change name">
+      <created>1670910881960</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1670910881960</updated>
+    </task>
+    <task id="LOCAL-00087" summary="add and change name">
+      <created>1670910917598</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1670910917598</updated>
+    </task>
+    <task id="LOCAL-00088" summary="add and change name">
+      <created>1670910979095</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1670910979095</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

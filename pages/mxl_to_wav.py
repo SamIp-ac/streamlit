@@ -24,18 +24,18 @@ if instrument != '---':
         ans = mw.m2w(mxlfile, str(instrument))
 
         # sr, x = wavfile.read('pages/Data/temp.wav')
-        audio_file = open('pages/Data/temp.wav', 'rb')
+        audio_file = open('pages/Data/temp_mxl2wav.wav', 'rb')
         audio_bytes = audio_file.read()
-        st.audio('pages/Data/temp.wav')
+        st.audio('pages/Data/temp_mxl2wav.wav')
 
         os.remove('temp_midi.mid')
         os.remove('temp_mxl.mxl')
-        os.remove('pages/Data/temp.wav')
+        os.remove('pages/Data/temp_mxl2wav.wav')
 
         st.download_button(
             label="Download data",
             data=audio_bytes,
-            file_name='audio.wav'
+            file_name='audio.mp3'
         )
 
 '''# Just add it after st.sidebar:

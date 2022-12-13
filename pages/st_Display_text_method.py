@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 st.markdown("# Display text")
 st.sidebar.markdown("# Display text")
