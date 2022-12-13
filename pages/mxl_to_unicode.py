@@ -3,6 +3,7 @@ import mxl2unicode as mu
 from bokeh.models.widgets import Button
 from bokeh.models import CustomJS
 from streamlit_bokeh_events import streamlit_bokeh_events
+import os
 
 st.markdown("# Unicode generator")
 st.sidebar.markdown("# Unicode generator")
@@ -21,6 +22,8 @@ if mxl_file:
             data=ans,
             file_name='unicode.txt'
         )
+
+        os.remove('temp.wav')
 
         copy_button = Button(label="Copy text")
         copy_button.js_on_event("button_click", CustomJS(args=dict(df=ans), code="""
