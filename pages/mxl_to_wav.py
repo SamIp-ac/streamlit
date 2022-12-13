@@ -1,5 +1,4 @@
 import streamlit as st
-import pandas as pd
 import mxl2wav as mw
 import os
 from scipy.io import wavfile

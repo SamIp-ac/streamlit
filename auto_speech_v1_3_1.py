@@ -1,13 +1,6 @@
 import music21
-from music21 import *
 import pandas as pd
-
-# Commented out IPython magic to ensure Python compatibility.
 import gtts
-import numpy, scipy, matplotlib.pyplot as plt, IPython.display as ipd
-import librosa, librosa.display
-import time
-"""#### Read the .mxl file"""
 
 
 def auto_speech(filename):
@@ -129,8 +122,6 @@ def auto_speech(filename):
 
     a = note_list
     b = duration_list_converted
-
-    plt.rcParams['figure.figsize'] = (13, 5)
 
     # conbine two lists in alternation
     result = [None] * (len(a) + len(b))
