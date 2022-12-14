@@ -4,7 +4,7 @@ import os
 from scipy.io import wavfile
 
 st.markdown("# Transform mxl file to audio")
-st.sidebar.markdown("# mxl to wav convertor")
+st.sidebar.markdown("### ** Remark: The wav file can be use in instruments classification part.")
 
 
 mxlfile = st.file_uploader("Upload a mxl file")
@@ -19,7 +19,7 @@ if instrument == '---':
 if instrument != '---':
     st.write('You selected:', instrument)
 
-    if st.button("Convert to wav"):
+    if st.button("Convert to audio"):
         ans = mw.m2w(mxlfile, str(instrument))
 
         # sr, x = wavfile.read('pages/Data/temp.wav')
@@ -31,11 +31,18 @@ if instrument != '---':
         os.remove('temp_mxl.mxl')
         os.remove('pages/Data/temp_mxl2wav.wav')
 
-        st.download_button(
-            label="Download data",
-            data=audio_bytes,
-            file_name='audio.mp3'
-        )
+        if st.button("Download as wav"):
+            st.download_button(
+                label="Download data",
+                data=audio_bytes,
+                file_name='audio.wav'
+            )
+        elif st.button("Download as mp3"):
+            st.download_button(
+                label="Download data",
+                data=audio_bytes,
+                file_name='audio.mp3'
+            )
 
 '''# Just add it after st.sidebar:
 a = st.sidebar.radio('Select one:', [1, 2])

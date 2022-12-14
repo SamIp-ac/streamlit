@@ -9,8 +9,12 @@ st.sidebar.markdown("# Predict the type of audio")
 
 
 wavfile_ = st.file_uploader("Upload a audio wav file")
-int_s = st.text_input('Cutting start point : ', '0')
-int_e = st.text_input('Cutting end point : ', '-1')
+col1, col2 = st.columns(2)
+
+with col1:
+    int_s = st.text_input('Cutting start point : ', '0')
+with col2:
+    int_e = st.text_input('Cutting end point : ', '-1')
 int_s = int(int_s)
 int_e = int(int_e)
 

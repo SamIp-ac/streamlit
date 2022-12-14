@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34d9d164-449b-47a3-a59b-c88bea3749d4" name="Changes" comment="add and change name">
-      <change afterPath="$PROJECT_DIR$/auto_speech_v1_3_1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mxl2wav.py" beforeDir="false" afterPath="$PROJECT_DIR$/mxl2wav.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/Auto_speech.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Auto_speech.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/mxl_to_wav.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/mxl_to_wav.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/st_Display_text_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/st_Display_text_method.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <list id="094754ac-525d-428b-a3ed-dbecebdeb3a3" name="ignore" comment="">
       <change afterPath="$PROJECT_DIR$/font.sf2" afterDir="false" />
@@ -98,20 +93,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667883844271</updated>
-    </task>
-    <task id="LOCAL-00040" summary="add and change name">
-      <created>1669016748847</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1669016748847</updated>
-    </task>
-    <task id="LOCAL-00041" summary="add and change name">
-      <created>1669086259125</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1669086259125</updated>
     </task>
     <task id="LOCAL-00042" summary="add and change name">
       <created>1669088068103</created>
@@ -442,7 +423,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670910979095</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="add and change name">
+      <created>1670912338208</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1670912338208</updated>
+    </task>
+    <task id="LOCAL-00090" summary="add and change name">
+      <created>1670912443344</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1670912443344</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
