@@ -16,3 +16,4 @@ auto-speech function will be added be the future.
 
 1-1-2023
 Deployed by GCP: https://streamlit-demo-amd64-vsdczlx2ia-de.a.run.app
+You use the .mxl file (provided in my GitHub)to try
