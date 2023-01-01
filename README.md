@@ -13,3 +13,6 @@ auto-speech function will be added be the future.
 
 28-12-2022
 - main theme change (view ./.streamlit/config.toml)
+
+1-1-2023
+Deployed by GCP: https://streamlit-demo-amd64-vsdczlx2ia-de.a.run.app
