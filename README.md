@@ -15,5 +15,5 @@ auto-speech function will be added be the future.
 - main theme change (view ./.streamlit/config.toml)
 
 1-1-2023
-Deployed by GCP: https://streamlit-demo-amd64-vsdczlx2ia-de.a.run.app
-You use the .mxl file (provided in my GitHub)to try
+- Deployed by GCP: https://streamlit-demo-amd64-vsdczlx2ia-de.a.run.app
+- You use the .mxl file (provided in my GitHub)to try, .mxl link: https://github.com/SamIp-ac/streamlit/blob/main/Concertino_in_D_Op15_3rd.mxl
