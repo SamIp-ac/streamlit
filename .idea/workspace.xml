@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34d9d164-449b-47a3-a59b-c88bea3749d4" name="Changes" comment="add and change name">
-      <change afterPath="$PROJECT_DIR$/.streamlit/config.toml" afterDir="false" />
+    <list default="true" id="34d9d164-449b-47a3-a59b-c88bea3749d4" name="Changes" comment="updated README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <list id="094754ac-525d-428b-a3ed-dbecebdeb3a3" name="ignore" comment="">
       <change afterPath="$PROJECT_DIR$/font.sf2" afterDir="false" />
@@ -41,21 +42,22 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/hoyinip/PycharmProjects/FirstWeb/.streamlit",
+    "last_opened_file_path": "/Users/hoyinip/PycharmProjects/FirstWeb",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.streamlit" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/ic_model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages" />
       <recent name="$PROJECT_DIR$/ic_model" />
       <recent name="$PROJECT_DIR$/pages/Data" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/app" />
-      <recent name="$PROJECT_DIR$/pages" />
     </key>
   </component>
   <component name="RunManager">
@@ -93,27 +95,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667883844271</updated>
-    </task>
-    <task id="LOCAL-00043" summary="add and change name">
-      <created>1669088465375</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1669088465375</updated>
-    </task>
-    <task id="LOCAL-00044" summary="add and change name">
-      <created>1669088667304</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1669088667304</updated>
-    </task>
-    <task id="LOCAL-00045" summary="add and change name">
-      <created>1669098822509</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1669098822509</updated>
     </task>
     <task id="LOCAL-00046" summary="add and change name">
       <created>1669172581829</created>
@@ -437,7 +418,28 @@
       <option name="project" value="LOCAL" />
       <updated>1670986415056</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="add and change name">
+      <created>1672198674724</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1672198674724</updated>
+    </task>
+    <task id="LOCAL-00093" summary="change streamlit main theme">
+      <created>1672198714933</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1672198714933</updated>
+    </task>
+    <task id="LOCAL-00094" summary="updated README.md">
+      <created>1672198828682</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1672198828682</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -456,6 +458,8 @@
     <MESSAGE value="change a word" />
     <MESSAGE value="change file position" />
     <MESSAGE value="add and change name" />
-    <option name="LAST_COMMIT_MESSAGE" value="add and change name" />
+    <MESSAGE value="change streamlit main theme" />
+    <MESSAGE value="updated README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated README.md" />
   </component>
 </project>
