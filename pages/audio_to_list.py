@@ -3,6 +3,7 @@ import pitchDetection as pD
 import librosa
 import numpy as np
 import soundfile as sf
+
 st.markdown("# Detection whole song pitch")
 st.sidebar.markdown("# Detection whole song pitch")
 st.sidebar.markdown("### - upload your wav/mp3 file. The detector would help your to generate the pitch and duration.")
