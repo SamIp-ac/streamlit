@@ -39,7 +39,6 @@ if st.button("Detect it"):
             temp = y
 
         y = temp
-        print(y)
 
     else:
         y, sr = librosa.load(wavfile_, sr=sampling_rate, mono=True)
