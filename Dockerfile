@@ -1,5 +1,5 @@
-FROM python:3.9.6
-
+FROM --platform=linux/amd64 python:3.9
+ENV export DOCKER_DEFAULT_PLATFORM=linux/amd64
 # Maintainer info
 LABEL maintainer="i60996395@gmail.com"
 
