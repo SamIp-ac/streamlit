@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="34d9d164-449b-47a3-a59b-c88bea3749d4" name="Changes" comment="updated README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <list id="094754ac-525d-428b-a3ed-dbecebdeb3a3" name="ignore" comment="">
       <change afterPath="$PROJECT_DIR$/font.sf2" afterDir="false" />
@@ -94,13 +93,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667883844271</updated>
-    </task>
-    <task id="LOCAL-00051" summary="add and change name">
-      <created>1669185774335</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1669185774335</updated>
     </task>
     <task id="LOCAL-00052" summary="add and change name">
       <created>1669185857409</created>
@@ -438,7 +430,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673328820294</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="updated README.md">
+      <created>1673329314707</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1673329314707</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
