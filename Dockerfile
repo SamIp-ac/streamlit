@@ -26,7 +26,7 @@ COPY  . .
 
 RUN apt-get update -y && apt-get install -y --no-install-recommends build-essential gcc libsndfile1
 RUN apt-get update -y && apt-get install -y --no-install-recommends build-essential gcc fluidsynth
-RUN apt-get update -y && apt-get install -y --no-install-recommends build-essential gcc soundfile
+
 # Run the python application
 CMD ["python", "main.py"]
 ENTRYPOINT ["streamlit", "run", "./main.py", "--server.port=8080", "--server.address=0.0.0.0"]
