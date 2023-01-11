@@ -32,14 +32,18 @@ if wavfile_:
 if st.button("Detect it"):
 
     if str(wavfile_.name)[-3:] == 'mp3':
-        y, sr = sf.read(wavfile_, dtype=np.int16, start=int_s, stop=int_e, always_2d=True)
-        if len(y[0]) == 2:
-            temp = (y[:, 0] + y[:, 1])/2
+        try:
+            y, sr = sf.read(wavfile_, dtype=np.int16, start=int_s, stop=int_e, always_2d=True)
+            if len(y[0]) == 2:
+                temp = (y[:, 0] + y[:, 1])/2
 
-        else:
-            temp = y
+            else:
+                temp = y
 
-        y = temp
+            y = temp
+        except:
+            y, sr = librosa.load(wavfile_, sr=sampling_rate, mono=True)
+            y = y[int_s:int_e]
 
     else:
         y, sr = librosa.load(wavfile_, sr=sampling_rate, mono=True)

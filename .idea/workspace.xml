@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34d9d164-449b-47a3-a59b-c88bea3749d4" name="Changes" comment="updated README.md" />
+    <list default="true" id="34d9d164-449b-47a3-a59b-c88bea3749d4" name="Changes" comment="updated README.md">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/audio_to_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/audio_to_list.py" afterDir="false" />
+    </list>
     <list id="094754ac-525d-428b-a3ed-dbecebdeb3a3" name="ignore" comment="">
       <change afterPath="$PROJECT_DIR$/font.sf2" afterDir="false" />
     </list>
@@ -91,13 +94,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667883844271</updated>
-    </task>
-    <task id="LOCAL-00054" summary="add and change name">
-      <created>1669704807933</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1669704807933</updated>
     </task>
     <task id="LOCAL-00055" summary="add and change name">
       <created>1669706623557</created>
@@ -435,7 +431,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673405210217</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="updated README.md">
+      <created>1673405614614</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1673405614614</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
