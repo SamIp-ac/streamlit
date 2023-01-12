@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34d9d164-449b-47a3-a59b-c88bea3749d4" name="Changes" comment="updated README.md">
+    <list default="true" id="34d9d164-449b-47a3-a59b-c88bea3749d4" name="Changes" comment="commit and push">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/audio_to_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/audio_to_list.py" afterDir="false" />
     </list>
     <list id="094754ac-525d-428b-a3ed-dbecebdeb3a3" name="ignore" comment="">
       <change afterPath="$PROJECT_DIR$/font.sf2" afterDir="false" />
@@ -94,13 +93,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667883844271</updated>
-    </task>
-    <task id="LOCAL-00055" summary="add and change name">
-      <created>1669706623557</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1669706623557</updated>
     </task>
     <task id="LOCAL-00056" summary="add and change name">
       <created>1669776880689</created>
@@ -438,7 +430,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673405614614</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="commit and push">
+      <created>1673406467491</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1673406467491</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -459,6 +458,7 @@
     <MESSAGE value="add and change name" />
     <MESSAGE value="change streamlit main theme" />
     <MESSAGE value="updated README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated README.md" />
+    <MESSAGE value="commit and push" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit and push" />
   </component>
 </project>

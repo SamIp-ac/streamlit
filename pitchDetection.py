@@ -90,6 +90,8 @@ def whole_pitch(whole_array, sampling_rate_=44100):
         remainder = len(whole_array) - (frame_length_ * temp)
 
     piece_array = []
+
+    message('Cutting')
     for i in range(0, temp):
         piece_array.append(whole_array[i * frame_length_:(i + 1) * frame_length_])
 
@@ -100,6 +102,8 @@ def whole_pitch(whole_array, sampling_rate_=44100):
     durationList = []
 
     foundation_freqList = []
+
+    message('Analysing and converting')
     for k in piece_array:
         f0_, voiced_flag, voiced_probs = librosa.pyin(k,
                                                       frame_length=frame_length_,
@@ -134,6 +138,7 @@ def whole_pitch(whole_array, sampling_rate_=44100):
     tempDurationList = [durationList[0]]
     tempErrorList = [errorList[0]]
 
+    message('Compressing')
     count = 1
     for h in range(len(noteList) - 1):
 
@@ -149,6 +154,7 @@ def whole_pitch(whole_array, sampling_rate_=44100):
             tempErrorList.append(errorList[h + 1])
             count = 1
 
+    message('Listing')
     ResultList = list(zip(tempNoteList, tempDurationList, tempErrorList))
 
     df = pd.DataFrame()
